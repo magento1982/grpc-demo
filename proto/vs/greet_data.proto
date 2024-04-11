@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package vs.greet.api;
+
+option go_package = "github.com/magento1982/grpc-demo/proto";
+
+message NoParam{};
+
+message HelloRequest{
+    string name = 1;
+}
+
+message HelloResponse{
+    string message = 1;
+}
+
+message NamesList{
+    repeated string names = 1;
+}
+
+message MessageList {
+    repeated string messages = 1;
+}
